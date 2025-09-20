@@ -58,6 +58,33 @@ body {
 }
 
 /* end header*/
+/* start hero*/
+.hero{
+    background-color: #F2F0FF;
+    padding: 50px 0;
+}
+.hero-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 60%;
+    gap: 15px;
+}
+.hero-content .first-p{
+    color: #FB2E86;
+}
+.hero-content .secand-p{
+    color: #8A8FB9;
+}
+.hero-content a{
+    margin-top: 40px;
+}
+.hero-img{
+    flex: 1 0 30%;
+}
+.hero-img img{
+    width: 100%;
+}
+/* end hero*/
 
 /*start products*/
 
@@ -82,7 +109,7 @@ body {
     border-radius: 4px;
 }
 
-.icons{
+ .product .icons{
     position: absolute;
     top: 10px;
     left: 10px;
@@ -187,6 +214,87 @@ a:active{
 
 /* end products*/
 
+/*start leatest-products*/
+.leatest-products {
+    padding: 50px 0;
+}
+
+.leatest-products h2 {
+    margin-bottom:30px;
+    color: #151875;
+
+}
+.leatest-list{
+    margin-bottom: 50px;
+    justify-content: center;
+    color: #151875;
+}
+
+.leatest-products .img {
+    background-color: #F7F7F7;
+     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.detalis {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px #00000040;
+    border-radius: 4px;
+}
+.leatest-products .top {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+
+.detalis .icons{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: none;
+    transition: all .6s;
+}
+.icons a {
+      padding: 6px;
+      border-radius: 50%;
+}
+a:active{
+    background-color: #EEEFFB;
+}
+
+.detalis:hover .icons{
+    display: block;
+}
+.leatest-detalis{
+    padding: 5px;
+}
+
+.leatest-products h3{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #151875;
+    text-decoration: underline #EEEFFB;
+}
+.pric{
+    font-size: 12px;
+}
+.pric .new-pric{
+    color: #151875;
+}
+.pric .old-pric{
+    color: #FB2448;
+    text-decoration: line-through;
+}
+
+
+
+/*end leatest-products*/
+
+
 /* start newslater */
 
 .newslater {
@@ -228,7 +336,7 @@ a:active{
 }
 
 .clients .logo {
-    width: calc((100% - 75px) /6);
+    width: calc((100% - 60px) /5);
 }
 
 .clients img {
