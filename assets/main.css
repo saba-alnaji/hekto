@@ -326,14 +326,54 @@ a:active{
     color: #FB2448;
     text-decoration: line-through;
 }
-
-
-
-
-
 /*end leatest-products*/
 
+/* start offer*/
+.shopex-offer{
+    padding: 50px 0;
+}
+.shopex-offer h2 {
+    margin-bottom: 50px;
+    color: #1A0B5B;
+}
+.shopex-offer .row {
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.shopex-offer .offer {
+    flex:1 0 200px ;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px #00000040;
+    border-radius: 4px;
+    padding: 40px;
+}
+.shopex-offer .offer-img{
+    margin-bottom: 15px;
+}
+.offer-img img{
+    object-fit: contain;
+}
+.shopex-offer h3{
+    color: #151875;
+    margin-bottom: 20px;
+}
+.shopex-offer p{
+    color: #D9D9D9;
+}
+@media  screen and (max-width: 992px) {
+  .shopex-offer .offer {
+    flex: 1 0 45%; 
+  }
+}
 
+
+@media  screen and (max-width: 576px) {
+  .shopex-offer .offer {
+    flex: 1 0 100%; 
+  }
+}
+/* end offer*/
 /* start newslater */
 
 .newslater {
